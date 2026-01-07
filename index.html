@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EduQuest – Interactive Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>EduQuest</h1>
+    <p>Interactive Web-Based Learning Platform</p>
+    <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+</header>
+
+<main>
+    <section class="dashboard">
+        <h2>Learning Dashboard</h2>
+        <p>Track your learning progress</p>
+
+        <div class="progress-bar">
+            <div id="progressFill"></div>
+        </div>
+        <p id="progressText">0% Completed</p>
+    </section>
+    <section class="lessons">
+        <div class="lesson-card">
+            <h3>HTML Basics</h3>
+            <p>Learn structure of web pages</p>
+            <button onclick="completeLesson('html')">Mark Completed</button>
+        </div>
+
+        <div class="lesson-card">
+            <h3>CSS Styling</h3>
+            <p>Design attractive webpages</p>
+            <button onclick="completeLesson('css')">Mark Completed</button>
+        </div>
+
+        <div class="lesson-card">
+            <h3>JavaScript Essentials</h3>
+            <p>Add interactivity & logic</p>
+            <button onclick="completeLesson('js')">Mark Completed</button>
+        </div>
+
+        <div class="lesson-card">
+            <h3>Mini Quiz</h3>
+            <p>Test your knowledge</p>
+            <button onclick="startQuiz()">Start Quiz</button>
+        </div>
+    </section>
+    <section class="certificate">
+        <h2>Certificate</h2>
+        <button onclick="generateCertificate()">Generate Certificate</button>
+        <p id="certificateText"></p>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 EduQuest | Learning Made Easy</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

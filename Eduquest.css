@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    transition: 0.4s;
+}
+header {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+header button {
+    margin-top: 15px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+main {
+    padding: 20px;
+}
+.dashboard {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 25px;
+    background: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#progressFill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(to right, #00c853, #64dd17);
+    transition: width 0.6s;
+}
+.lessons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.lesson-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.12);
+    transition: transform 0.3s;
+}
+
+.lesson-card:hover {
+    transform: scale(1.03);
+}
+.lesson-card button {
+    margin-top: 10px;
+    padding: 8px 14px;
+    background: #4facfe;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.certificate {
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+footer {
+    text-align: center;
+    padding: 12px;
+    background: #222;
+    color: white;
+    margin-top: 30px;
+}
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode header {
+    background: #1e1e1e;
+}
+
+.dark-mode .dashboard,
+.dark-mode .lesson-card,
+.dark-mode .certificate {
+    background: #1f1f1f;
+    color: white;
+}
